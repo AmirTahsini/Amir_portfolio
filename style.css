@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(
+        rgb(31, 5, 147, 0.2) 0%,
+        rgb(31, 5, 147, 0.7) 100%
+    )
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 25px;
+}
+
+.links {
+    padding-top: 15px;
+    margin-right: 25px;
+    float: right;
+    font-size: 20px;
+}
+
+.links ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    width: 100%;
+    margin-left: 25px;
+}
+
+p {
+    margin-right: 25px;
+    padding-right: 10px;
+}
+
+#amirpic {
+    width: 20%;
+    margin-top: 10px;
+}
+
+#projects {
+    margin-left: 25px;
+}
+
+h2 {
+    font-size: 35px;
+    color: blue;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-top: 10px;
+}
+
+.image-1 {
+    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    transition: transform .2s;
+    width: 100%;
+}
+
+.image-1 img {
+    width: 60%;
+    transition: transform .2s;
+    padding: 0;
+}
+
+.image-1:hover {
+    transform: scale(1.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.image-2 img {
+    width: 60%;
+}
+
+.image-2 {
+    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    transition: transform .2s;
+}
+
+.image-2:hover {
+    transform: scale(1.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(
+        rgb(31, 5, 147, 0.2) 0%,
+        rgb(31, 5, 147, 0.7) 100%
+    ) 
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #amirpic {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about-me {
+      padding-top: 40px;
+    }
+}
+
